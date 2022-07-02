@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/device_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="17.5dp"
+        android:layout_marginVertical="17.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/login_bg"
+        android:fontFamily="@font/font"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:text="..."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_baseline_person"
+        android:drawablePadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="70dp" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/login_bg"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:gravity="center_vertical"
+        android:hint="รหัสผ่าน"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingHorizontal="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_text" />
+
+    <Button
+        android:id="@+id/copy"
+        android:fontFamily="@font/font"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="?attr/actionModeCopyDrawable"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/device_text"
+        app:layout_constraintStart_toEndOf="@+id/device_text"
+        app:layout_constraintTop_toTopOf="@+id/device_text"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/login_button_bg"
+        android:fontFamily="@font/font"
+        android:text="เข้าสู่ระบบ"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawable="@drawable/ic_baseline_play_circle_filled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_text" />
+
+    <Button
+        android:id="@+id/add_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/no_bg"
+        android:fontFamily="@font/font"
+        android:text="ต้องการเปิดบัญชี ?"
+        android:textColor="#555555"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/font"
+        android:text="v1.0"
+        android:textSize="12.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_line" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

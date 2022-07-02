@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#757575"
+    android:maxHeight="50dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/font"
+        android:text="ตั้งค่า"
+        android:textColor="#E8E8E8"
+        android:textSize="21sp" />
+
+</androidx.appcompat.widget.Toolbar>
